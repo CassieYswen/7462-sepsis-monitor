@@ -8,7 +8,7 @@ on:
 name: Render Report
 
 jobs:
-  hourly-job:
+  build-deploy:
     runs-on: ubuntu-latest
     
     permissions:
