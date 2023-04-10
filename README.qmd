@@ -55,7 +55,7 @@ toc()
 
 #TASK3
 
-```{r}
+```{r,eval=FALSE}
 #|eval: false
 
 df <- makeSepsisDataset()
