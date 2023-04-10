@@ -36,10 +36,6 @@ jobs:
                any::tidyverse
                any::ggplot2
                any::readr
-               any::lubridate
-               any::forcats
-               any::tictoc
-               any::data.table
                any::googledrive
                
 
