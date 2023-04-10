@@ -1,11 +1,18 @@
 ---
-title: "A7"
-format: html
-editor: visual
-#|message: false
-#|warning: false
-#|include: true
 ---
+title: "ICU Status Report"
+author: "Yansong Wen"
+format: gfm
+execute: 
+  eval: true
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+Report last run: `r Sys.time()`
+
 
 ##TASK1&2
 
