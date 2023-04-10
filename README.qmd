@@ -19,6 +19,10 @@ library(lubridate)
 source("sepsis_monitor_functions.R")
 library(tictoc)
 library(knitr)
+library(googledrive)
+## Calling drive_deauth() prevents R from trying to authenticate via a browser
+## This is needed to make the GitHub Action work
+drive_deauth()
 ```
 
 ```{r, eval=FALSE}
@@ -54,8 +58,8 @@ toc()
 #TASK3
 
 ```{r}
-library(googledrive)
-drive_deauth()
+
+
 df <- makeSepsisDataset()
 
 # We have to write the file to disk first, then upload it
@@ -73,9 +77,7 @@ sepsis_file %>% drive_share_anyone()
 #TASK 4
 
 ```{r}
-## Calling drive_deauth() prevents R from trying to authenticate via a browser
-## This is needed to make the GitHub Action work
-drive_deauth()
+
 file_link <- "https://drive.google.com/file/d/1S8cxt5kgdWejiqDj6pDQLbsArxkdSjll/view?usp=share_link"
 
 ## All data up until now
