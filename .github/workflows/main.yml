@@ -37,6 +37,7 @@ jobs:
                any::ggplot2
                any::readr
                any::googledrive
+               any::tictoc
                
 
       - name: Render document
