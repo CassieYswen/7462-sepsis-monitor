@@ -40,6 +40,7 @@ jobs:
                any::forcats
                any::tictoc
                any::data.table
+               any::googledrive
                
 
       - name: Render document
